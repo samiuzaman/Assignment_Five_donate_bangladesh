@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-    
-</body>
+    <!-- Lexend Font CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN Link -->
+    <script
+      src="https://kit.fontawesome.com/27daea0603.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- DaisyUI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config Section -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              buttonBg: "#B4F461",
+              navColor: "#F9F7F3",
+              textColor: "#111111B3",
+              grayColor: "#E7E7E7",
+            },
+          },
+          fontFamily: {
+            Lexend: "Lexend",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Lexend relative">
+    <header class="w-full sticky top-0">
+      <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
+        <div class="text-center mb-8 lg:mb-0">
+          <button
+            class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
+          >
+            <a href="../index.html">Home</a>
+          </button>
+        </div>
+
+        <div class="flex justify-center items-center mb-8 lg:mb-0">
+          <img
+            class="w-12 h-12 mr-4"
+            src="../assets/logo.png"
+            alt="Logo Image"
+          />
+          <h3 class="text-center text-xl font-semibold text-black">
+            Donate Bangladesh
+          </h3>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <img class="w-7 h-7 mr-3" src="../assets/coin.png" alt="Coin Image" />
+          <p class="text-xl font-medium text-textColor">
+            <span id="main-balance">5500</span>
+            <span>BDT</span>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--  Section Code Start Here -->
+      <section class="w-11/12 lg:w-4/5 mx-auto mt-10">
+        <h1 class="text-black text-3xl lg:text-5xl font-bold mb-8">
+          Important FAQ
+          <i class="animate-bounce fa-regular fa-circle-question"></i>
+        </h1>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium text-black">
+              What is the Document Object Model(DOM)?
+            </div>
+            <div class="collapse-content">
+              <p class="text-textColor text-base font-normal w-11/12">
+                DOM is a Document Object Model and Programming Interface for
+                HTML objects, properties, methods and events to get, change, add
+                or delete HTML elements.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium text-black">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="text-textColor text-base font-normal w-11/12">
+                The Selectors API provides methods that make it quick and easy
+                to retrieve Element nodes from the DOM by matching against a set
+                of selectors. This is much faster than past techniques, wherein
+                it was necessary to, for example, use a loop in JavaScript code
+                to locate the specific items you needed to find.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium text-black">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p class="text-textColor text-base font-normal w-11/12">
+                Event delegation refers to the process of using event
+                propagation (bubbling) to handle events at a higher level in the
+                DOM than the element on which the event originated. It allows us
+                to attach a single event listener for elements that exist now or
+                in the future.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium text-black">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="text-textColor text-base font-normal w-11/12">
+                The classList object only provide methods to change the class of
+                an element. If you want to change other attributes like id ,
+                href , or src , you can use the setAttribute() method. The
+                setAttribute() method accepts two arguments: The name of the
+                attribute to set
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section Code Start Here -->
+    </main>
+  </body>
 </html>
