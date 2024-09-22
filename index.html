@@ -40,18 +40,18 @@
       };
     </script>
   </head>
-  <body class="font-Lexend">
-    <header class="w-full">
+  <body class="font-Lexend relative">
+    <header class="w-full sticky top-0">
       <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
-        <div class="text-center mb-8 lg:mb-2">
+        <div class="text-center mb-8 lg:mb-0">
           <a
-            class="text-center text-xl font-semibold text-black bg-buttonBg py-3 px-6 rounded-lg"
+            class="btn text-center text-xl font-semibold text-black bg-buttonBg py-3 px-6 rounded-lg hover:bg-buttonBg"
             href="#"
             >Blog</a
           >
         </div>
 
-        <div class="flex justify-center items-center mb-8 lg:mb-2">
+        <div class="flex justify-center items-center mb-8 lg:mb-0">
           <img class="w-12 h-12 mr-4" src="assets/logo.png" alt="Logo Image" />
           <h3 class="text-center text-xl font-semibold text-black">
             Donate Bangladesh
@@ -68,7 +68,9 @@
       </nav>
 
       <!-- Banner Button Section Code Start Here -->
-      <section class="flex justify-center items-center mt-16 gap-5">
+      <section
+        class="flex justify-center items-center pt-10 pb-5 gap-5 bg-white"
+      >
         <button
           class="btn btn-active bg-buttonBg hover:bg-buttonBg text-xl font-medium"
         >
@@ -80,12 +82,12 @@
       </section>
       <!-- Banner Button Section Code End Here -->
     </header>
-    <main class="mt-10">
+    <main class="w-11/12 lg:w-4/5 mx-auto mt-10">
       <!-- Donation Card Section Code Start Here -->
-      <div>
+      <section id="donation-container" class="">
         <!-- Donation Card One -->
         <div
-          class="w-11/12 lg:w-4/5 mx-auto lg:flex lg:justify-center lg:items-center gap-8 border border-grayColor rounded-2xl p-6 shadow-lg mb-8"
+          class="lg:flex lg:justify-center lg:items-center gap-8 border border-grayColor rounded-2xl p-6 shadow-lg mb-8"
         >
           <div class="lg:w-1/2 mb-10 lg:mb-0">
             <img
@@ -134,7 +136,7 @@
 
         <!-- Donation Card Two -->
         <div
-          class="w-11/12 lg:w-4/5 mx-auto lg:flex lg:justify-center lg:items-center gap-8 border border-grayColor rounded-2xl p-6 shadow-lg mb-8"
+          class="lg:flex lg:justify-center lg:items-center gap-8 border border-grayColor rounded-2xl p-6 shadow-lg mb-8"
         >
           <div class="lg:w-1/2 mb-10 lg:mb-0">
             <img class="lg:w-full" src="assets/feni.png" alt="Feni Image" />
@@ -161,7 +163,9 @@
               leaving approximately 5 thousand people stranded in the regions
               including Feni. In response, Programming Hero has announced
               emergency relief fund of 30 million BDT from its own resources to
-              support those affected by the floods.
+              support those affected by the floods. Please join us in supporting
+              the relief efforts and making a positive impact on the lives of
+              those in need.
             </p>
             <input
               type="text"
@@ -178,13 +182,13 @@
 
         <!-- Donation Card Three -->
         <div
-          class="w-11/12 lg:w-4/5 mx-auto lg:flex lg:justify-center lg:items-center gap-8 border border-grayColor rounded-2xl p-6 shadow-lg mb-8"
+          class="lg:flex lg:justify-center lg:items-center gap-8 border border-grayColor rounded-2xl p-6 shadow-lg mb-8"
         >
           <div class="lg:w-1/2 mb-10 lg:mb-0">
             <img
               class="lg:w-full"
-              src="assets/noakhali.png"
-              alt="Noakhali Image"
+              src="assets/quota-protest.png"
+              alt="Quota protest Image"
             />
           </div>
           <div class="lg:w-1/2 pr-2">
@@ -208,8 +212,12 @@
               The recent Quota movement has resulted in numerous injuries and
               significant hardship for many individuals. Your support is crucial
               in providing medical assistance, rehabilitation, and necessary
-              supplies to those affected. Please consider making a donation to
-              support these brave individuals in their time of need.
+              supplies to those affected. By contributing, you help ensure that
+              injured individuals receive the care and support they need during
+              this challenging time. Every donation plays a vital role in
+              alleviating their suffering and aiding in their recovery. Please
+              consider making a donation to support these brave individuals in
+              their time of need.
             </p>
             <input
               type="text"
@@ -223,8 +231,20 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Donation Card Section Code End Here -->
+      <!-- History Card Section Code Start Here -->
+      <section id="history-container" class="hidden">
+        <div class="border border-grayColor rounded-xl p-8 shadow-sm mb-6">
+          <h4 class="text-black text-xl font-semibold mb-4">
+            6500 Taka is Donated for Flood Relief in Feni,Bangladesh
+          </h4>
+          <p class="text-textColor text-base font-light">
+            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+          </p>
+        </div>
+      </section>
+      <!-- History Card Section Code End Here -->
     </main>
     <!-- Link External JavaScript File -->
     <script src="app.js"></script>
