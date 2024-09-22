@@ -27,10 +27,9 @@
         theme: {
           extend: {
             colors: {
-              btnColor: "#da373d",
+              buttonBg: "#B4F461",
               navColor: "#F9F7F3",
               textColor: "#111111B3",
-              black: "#111111",
               placeholderColor: "#11111166",
             },
           },
@@ -42,9 +41,32 @@
     </script>
   </head>
   <body class="font-Lexend">
-    <h1 class="bg-[#F9F7F3] text-red-700 text-3xl font-bold">
-      Assigment 5 -- > Donate Bangladesh
-    </h1>
+    <header class="w-full">
+      <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
+        <div class="text-center mb-8 lg:mb-2">
+          <a
+            class="text-center text-xl font-semibold text-black bg-buttonBg py-3 px-6 rounded-lg"
+            href="#"
+            >Blog</a
+          >
+        </div>
+
+        <div class="flex justify-center items-center mb-8 lg:mb-2">
+          <img class="w-12 h-12 mr-4" src="assets/logo.png" alt="Logo Image" />
+          <h3 class="text-center text-xl font-semibold text-black">
+            Donate Bangladesh
+          </h3>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="Coin Image" />
+          <p class="text-xl font-medium text-textColor">
+            <span id="main-balance">5500</span>
+            <span>BDT</span>
+          </p>
+        </div>
+      </nav>
+    </header>
     <!-- Link External JavaScript File -->
     <script src="app.js"></script>
   </body>
