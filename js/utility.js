@@ -39,4 +39,3 @@ function changeToggleBtnColor(id) {
 }
 
 // toggle Blog to Home & Home to Blog
-

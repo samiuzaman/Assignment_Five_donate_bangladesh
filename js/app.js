@@ -14,8 +14,11 @@ document
     const balanceValue = textToNumber("main-balance");
     const donatioBlcValue = textToNumber("noakhali-donation-balance");
     const inputAmountValue = inputToNumber("input-noakhali-amount");
-
-    if (balanceValue < inputAmountValue || inputAmountValue <= 0) {
+    if (
+      balanceValue < inputAmountValue ||
+      inputAmountValue < 0 ||
+      typeof isNaN(inputAmountValue === "number")
+    ) {
       alert("Invalid Donation Amount");
       return;
     } else {
@@ -87,10 +90,6 @@ document.getElementById("close-btn").addEventListener("click", function () {
   document.getElementById("quota-donate-amount").value = "";
 });
 // Donation Section Code End Here
-
-// document.getElementById("blog-btn").addEventListener("click", function () {
-//   console.log("Home Button is clicked");
-// });
 
 // Donation Button
 document.getElementById("donation-btn").addEventListener("click", function () {
