@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+
     <!-- Lexend Font CDN Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,12 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome CDN Link -->
-    <script
-      src="https://kit.fontawesome.com/27daea0603.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- DaisyUI CDN Link -->
     <link
@@ -45,14 +40,15 @@
       };
     </script>
   </head>
-  <body class="font-Lexend relative">
+  <body>
     <header class="w-full sticky top-0">
       <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
         <div class="text-center mb-8 lg:mb-0">
           <button
+            id="home-page-btn"
             class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
           >
-            <a href="../index.html">Home</a>
+            Home
           </button>
         </div>
 
@@ -76,6 +72,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!--  Section Code Start Here -->
       <section class="w-11/12 lg:w-4/5 mx-auto mt-10">
@@ -148,5 +145,6 @@
       </section>
       <!-- FAQ Section Code Start Here -->
     </main>
+    <script src="blog.js"></script>
   </body>
 </html>

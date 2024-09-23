@@ -87,3 +87,24 @@ document.getElementById("close-btn").addEventListener("click", function () {
   document.getElementById("quota-donate-amount").value = "";
 });
 // Donation Section Code End Here
+
+// document.getElementById("blog-btn").addEventListener("click", function () {
+//   console.log("Home Button is clicked");
+// });
+
+// Donation Button
+document.getElementById("donation-btn").addEventListener("click", function () {
+  donationToHistoryBtn("donation-container");
+  changeToggleBtnColor("donation-btn");
+});
+
+// History Button
+document.getElementById("history-btn").addEventListener("click", function () {
+  donationToHistoryBtn("history-container");
+  changeToggleBtnColor("history-btn");
+});
+
+// Toggle Home to Blog
+document.getElementById("blog-page-btn").addEventListener("click", function () {
+  window.location.href = "./blog/blog.html";
+});

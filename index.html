@@ -44,11 +44,9 @@
     <header class="w-full sticky top-0">
       <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
         <div class="text-center mb-8 lg:mb-0">
-          <button
+          <button id="blog-page-btn"
             class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
-          >
-            <a href="blog/blog.html">Blog</a>
-          </button>
+          >Blog</button>
         </div>
 
         <div class="flex justify-center items-center mb-8 lg:mb-0">
@@ -72,11 +70,15 @@
         class="flex justify-center items-center pt-10 pb-5 gap-5 bg-white"
       >
         <button
+          id="donation-btn"
           class="btn btn-active bg-buttonBg hover:bg-buttonBg text-xl font-medium"
         >
           Donation
         </button>
-        <button class="btn btn-active hover:bg-buttonBg text-xl font-medium">
+        <button
+          id="history-btn"
+          class="btn btn-active hover:bg-buttonBg text-xl font-medium"
+        >
           History
         </button>
       </section>
@@ -240,7 +242,7 @@
       </section>
       <!-- Donation Card Section Code End Here -->
       <!-- History Card Section Code Start Here -->
-      <section id="history-container" class=""></section>
+      <section id="history-container" class="hidden"></section>
       <!-- History Card Section Code End Here -->
       <!-- Modal Section Code Start Here -->
       <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -267,7 +269,6 @@
     </main>
     <!-- Link External JavaScript File -->
     <script src="js/utility.js"></script>
-    <script src="js/toggle.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

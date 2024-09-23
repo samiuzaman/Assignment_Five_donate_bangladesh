@@ -21,3 +21,22 @@ function donatioHistory(inputId, ElemnetId) {
         </div>
 `;
 }
+
+// Feature Toggle Button
+function donationToHistoryBtn(id) {
+  document.getElementById("donation-container").classList.add("hidden");
+  document.getElementById("history-container").classList.add("hidden");
+
+  document.getElementById(id).classList.remove("hidden");
+}
+
+// Change Feature Toggle Button Color
+function changeToggleBtnColor(id) {
+  document.getElementById("history-btn").classList.remove("bg-buttonBg");
+  document.getElementById("donation-btn").classList.remove("bg-buttonBg");
+
+  document.getElementById(id).classList.add("bg-buttonBg");
+}
+
+// toggle Blog to Home & Home to Blog
+
