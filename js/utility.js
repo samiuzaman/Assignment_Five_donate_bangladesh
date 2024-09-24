@@ -5,7 +5,7 @@ function textToNumber(id) {
 }
 function inputToNumber(id) {
   const value = document.getElementById(id).value;
-  return (convertNumber = parseFloat(value));
+  return (convertNumber = Number(value));
 }
 
 // History Section Function
@@ -15,11 +15,12 @@ function donatioHistory(inputId, ElemnetId) {
           <h4 class="text-black text-xl font-semibold mb-4">
             ${inputId} Taka is Donated for ${ElemnetId}
           </h4>
-          <p class="text-textColor text-base font-light">
+          <p class="text-textColor text-base font-light bg-grayColor py-2 pl-2 rounded-md">
             Date : ${new Date()}
           </p>
         </div>
 `;
+  document.getElementById("default-text").innerText = " ";
 }
 
 // Feature Toggle Button
@@ -37,5 +38,3 @@ function changeToggleBtnColor(id) {
 
   document.getElementById(id).classList.add("bg-buttonBg");
 }
-
-// toggle Blog to Home & Home to Blog

@@ -41,36 +41,52 @@
     </script>
   </head>
   <body class="font-Lexend relative">
-    <header class="w-full lg:sticky lg:top-0">
-      <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
-        <div class="text-center mb-8 lg:mb-0">
-          <button
-            id="blog-page-btn"
-            class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
-          >
-            Blog
-          </button>
-        </div>
-
-        <div class="flex justify-center items-center mb-8 lg:mb-0">
+    <header class="w-full sticky top-0">
+      <nav class="bg-navColor py-5">
+        <!-- Responsive Mobile View logo Start Here -->
+        <div class="lg:hidden flex justify-center items-center mb-8">
           <img class="w-12 h-12 mr-4" src="assets/logo.png" alt="Logo Image" />
           <h3 class="text-center text-xl font-semibold text-black">
             Donate Bangladesh
           </h3>
         </div>
+        <!-- Responsive Mobile View logo End Here -->
+        <div class="flex justify-around items-center">
+          <div class="text-center">
+            <button
+              id="blog-page-btn"
+              class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
+            >
+              Blog
+            </button>
+          </div>
 
-        <div class="flex justify-center items-center">
-          <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="Coin Image" />
-          <p class="text-xl font-medium text-textColor">
-            <span id="main-balance">5500</span>
-            <span>BDT</span>
-          </p>
+          <div
+            class="hidden lg:block lg:flex lg:justify-center lg:items-center mb-8 lg:mb-0"
+          >
+            <img
+              class="w-12 h-12 mr-4"
+              src="assets/logo.png"
+              alt="Logo Image"
+            />
+            <h3 class="text-center text-xl font-semibold text-black">
+              Donate Bangladesh
+            </h3>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="Coin Image" />
+            <p class="text-xl font-medium text-textColor">
+              <span id="main-balance">5500</span>
+              <span>BDT</span>
+            </p>
+          </div>
         </div>
       </nav>
 
       <!-- Banner Button Section Code Start Here -->
       <section
-        class="flex justify-center items-center pt-10 pb-5 gap-5 bg-white"
+        class="flex justify-center items-center py-3 lg:pt-8 lg:pb-5 gap-5 bg-white"
       >
         <button
           id="donation-btn"
@@ -245,7 +261,14 @@
       </section>
       <!-- Donation Card Section Code End Here -->
       <!-- History Card Section Code Start Here -->
-      <section id="history-container" class="hidden"></section>
+      <section id="history-container" class="hidden">
+        <h2
+          id="default-text"
+          class="text-3xl text-textColro font-semibold text-center"
+        >
+          No Donation History
+        </h2>
+      </section>
       <!-- History Card Section Code End Here -->
       <!-- Modal Section Code Start Here -->
       <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -254,7 +277,7 @@
             Congrates!
           </h2>
           <img
-            class="w-8 h-8 lg:w-10 h-10 mb-4"
+            class="w-8 h-8 lg:w-10 mb-4"
             src="assets/coin.png"
             alt="Coin Image"
           />

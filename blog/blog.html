@@ -13,6 +13,12 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome CDN Link -->
+    <script
+      src="https://kit.fontawesome.com/27daea0603.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- DaisyUI CDN Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -40,19 +46,11 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-Lexend">
     <header class="w-full">
-      <nav class="bg-navColor py-7 lg:flex lg:justify-around lg:items-center">
-        <div class="text-center mb-8 lg:mb-0">
-          <button
-            id="home-page-btn"
-            class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
-          >
-            Home
-          </button>
-        </div>
-
-        <div class="flex justify-center items-center mb-8 lg:mb-0">
+      <nav class="bg-navColor py-5">
+        <!-- Responsive Mobile View logo Start Here -->
+        <div class="lg:hidden flex justify-center items-center mb-8">
           <img
             class="w-12 h-12 mr-4"
             src="../assets/logo.png"
@@ -62,13 +60,41 @@
             Donate Bangladesh
           </h3>
         </div>
+        <!-- Responsive Mobile View logo End Here -->
+        <div class="flex justify-around items-center">
+          <div class="text-center">
+            <button
+              id="home-page-btn"
+              class="btn bg-buttonBg hover:bg-buttonBg text-xl font-semibold text-black"
+            >
+              Home
+            </button>
+          </div>
 
-        <div class="flex justify-center items-center">
-          <img class="w-7 h-7 mr-3" src="../assets/coin.png" alt="Coin Image" />
-          <p class="text-xl font-medium text-textColor">
-            <span id="main-balance">5500</span>
-            <span>BDT</span>
-          </p>
+          <div
+            class="hidden lg:block lg:flex lg:justify-center lg:items-center mb-8 lg:mb-0"
+          >
+            <img
+              class="w-12 h-12 mr-4"
+              src="../assets/logo.png"
+              alt="Logo Image"
+            />
+            <h3 class="text-center text-xl font-semibold text-black">
+              Donate Bangladesh
+            </h3>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <img
+              class="w-7 h-7 mr-3"
+              src="../assets/coin.png"
+              alt="Coin Image"
+            />
+            <p class="text-xl font-medium text-textColor">
+              <span id="main-balance">5500</span>
+              <span>BDT</span>
+            </p>
+          </div>
         </div>
       </nav>
     </header>
@@ -80,6 +106,7 @@
           Important FAQ
           <i class="animate-bounce fa-regular fa-circle-question"></i>
         </h1>
+
         <div class="join join-vertical w-full">
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" checked="checked" />

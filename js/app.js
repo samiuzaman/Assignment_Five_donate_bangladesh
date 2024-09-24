@@ -14,10 +14,11 @@ document
     const balanceValue = textToNumber("main-balance");
     const donatioBlcValue = textToNumber("noakhali-donation-balance");
     const inputAmountValue = inputToNumber("input-noakhali-amount");
+
     if (
       balanceValue < inputAmountValue ||
-      inputAmountValue < 0 ||
-      typeof isNaN(inputAmountValue === "number")
+      inputAmountValue <= 0 ||
+      isNaN(inputAmountValue)
     ) {
       alert("Invalid Donation Amount");
       return;
@@ -43,7 +44,11 @@ document
     const donatioBlcValue = textToNumber("feni-donation-balance");
     const inputAmountValue = inputToNumber("feni-donate-amount");
 
-    if (balanceValue < inputAmountValue || inputAmountValue <= 0) {
+    if (
+      balanceValue < inputAmountValue ||
+      inputAmountValue <= 0 ||
+      isNaN(inputAmountValue)
+    ) {
       alert("Invalid Donation Amount");
       return;
     } else {
@@ -68,7 +73,11 @@ document
     const balanceValue = textToNumber("main-balance");
     const donatioBlcValue = textToNumber("quota-donation-balance");
     const inputAmountValue = inputToNumber("quota-donate-amount");
-    if (balanceValue < inputAmountValue || inputAmountValue <= 0) {
+    if (
+      balanceValue < inputAmountValue ||
+      inputAmountValue <= 0 ||
+      isNaN(inputAmountValue)
+    ) {
       alert("Invalid Donation Amount");
       return;
     } else {
